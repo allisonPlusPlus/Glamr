@@ -6,3 +6,8 @@ h1 {
   font-family: 'Give You Glory', cursive;
   font-weight: bolder;
 }
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
