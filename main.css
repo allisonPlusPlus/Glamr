@@ -13,6 +13,16 @@ h1 {
    margin: 0 !important;
 }
 
+.color-chart {
+box-sizing: border-box;
+ margin-bottom: 20px;
+}
+
+
+#color1, #color2, #color3, #color4, #color5, #color6 {
+   min-height:86px !important;
+}
+
 #color1 {
     background-color: #9c1234;
 }
@@ -75,10 +85,6 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.color-chart {
-box-sizing: border-box;
- margin-bottom: 20px;
-}
 
 .color-name, .color-texture {
 
