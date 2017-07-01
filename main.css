@@ -86,7 +86,6 @@ box-sizing: border-box;
 
 
 .color-name, .color-texture {
-
    color: white;
    text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
 }
@@ -98,3 +97,7 @@ box-sizing: border-box;
       display: block;
   }
 }
+.color-name, .color-texture {
+   margin-bottom: 0px;
+   padding: 0px;
+ }
