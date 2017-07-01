@@ -14,15 +14,20 @@ h1 {
 }
 
 #color1 {
-  box-sizing: border-box;
-    background-image: url("swatches/rubywoo.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #9c1234;
+}
 
+#color1:hover {
+  background-image: url("swatches/rubywoo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #color2 {
   background-color: #cd2834;
+}
+
+#color2:hover {
   background-image: url("swatches/ladydanger.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -30,13 +35,21 @@ h1 {
 
 #color3 {
   background-color: #e34493;
+
+}
+
+#color3:hover {
   background-image: url("swatches/candyyumyum.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
 }
 
 #color4 {
   background-color: #74427f;
+}
+
+#color4:hover {
   background-image: url("swatches/heroine.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -44,6 +57,9 @@ h1 {
 
 #color5 {
   background-color: #dfb3a6;
+}
+
+#color5:hover {
   background-image: url("swatches/cremednude.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -51,6 +67,9 @@ h1 {
 
 #color6 {
   background-color: #b37468;
+}
+
+#color6:hover {
   background-image: url("swatches/velvetteddy.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
