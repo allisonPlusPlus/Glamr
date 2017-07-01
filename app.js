@@ -6,9 +6,11 @@ console.log(query)
    function hoverTitle() {
        $("#color1").mouseover(function() {
            $("#color-title1").removeClass("hidden");
+           $("#color-texture1").removeClass("hidden");
        });
        $("#color1").mouseout(function() {
            $("#color-title1").addClass("hidden");
+           $("#color-texture1").addClass("hidden");
        });
    }
 
