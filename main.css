@@ -15,33 +15,45 @@ h1 {
 
 #color1 {
   box-sizing: border-box;
-  background-image: url("swatches/rubywoo.jpg")
+    background-image: url("swatches/rubywoo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
 }
 
 #color2 {
   background-color: #cd2834;
-  background-image: url("swatches/ladydanger.jpg")
+  background-image: url("swatches/ladydanger.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #color3 {
   background-color: #e34493;
-  background-image: url("swatches/candyyumyum.jpg")
+  background-image: url("swatches/candyyumyum.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #color4 {
   background-color: #74427f;
-  background-image: url("swatches/heroine.jpg")
+  background-image: url("swatches/heroine.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #color5 {
   background-color: #dfb3a6;
-  background-image: url("swatches/cremednude.jpg")
+  background-image: url("swatches/cremednude.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #color6 {
   background-color: #b37468;
-  background-image: url("swatches/velvetteddy.jpg")
+  background-image: url("swatches/velvetteddy.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .color-chart {
