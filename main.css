@@ -18,68 +18,70 @@ box-sizing: border-box;
  margin-bottom: 20px;
 }
 
-#color1, #color2, #color3, #color4, #color5, #color6 {
+.swatch {
+  color: white;
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
    min-height:86px !important;
 }
 
-#color1 {
+.swatch.rubywoo {
     background-color: #9c1234;
 }
 
-#color1:hover {
+.swatch.rubywoo:hover {
   background-image: url("swatches/rubywoo.jpg");
   position: relative;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#color2 {
+.swatch.ladydanger {
   background-color: #cd2834;
 }
 
-#color2:hover {
+.swatch.ladydanger:hover {
   background-image: url("swatches/ladydanger.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#color3 {
+.swatch.candyyumyum {
   background-color: #e34493;
 
 }
 
-#color3:hover {
+.swatch.candyyumyum:hover {
   background-image: url("swatches/candyyumyum.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
 }
 
-#color4 {
+.swatch.heroine {
   background-color: #74427f;
 }
 
-#color4:hover {
+.swatch.heroine:hover {
   background-image: url("swatches/heroine.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#color5 {
+.swatch.cremednude {
   background-color: #dfb3a6;
 }
 
-#color5:hover {
+.swatch.cremednude:hover {
   background-image: url("swatches/cremednude.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#color6 {
+.swatch.velvetteddy {
   background-color: #b37468;
 }
 
-#color6:hover {
+.swatch.velvetteddy:hover{
   background-image: url("swatches/velvetteddy.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -87,12 +89,17 @@ box-sizing: border-box;
 
 
 .color-name, .color-texture {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
    color: white;
    text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
+}
+
+.color-name, .color-texture:hover {
+  display: block;
 }
 
 
