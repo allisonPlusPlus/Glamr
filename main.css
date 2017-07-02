@@ -24,6 +24,14 @@ box-sizing: border-box;
    min-height:86px !important;
 }
 
+.swatch p, .swatch h3 {
+  display: none;
+}
+
+.swatch:hover p, .swatch:hover h3 {
+  display: block;
+}
+
 .swatch.rubywoo {
     background-color: #9c1234;
 }

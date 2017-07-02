@@ -1,23 +1,9 @@
-jshint strict:false;
-'use strict';
 
 function getInstagram(query) {
 console.log(query);
 }
 
-// Mouse Hover Effect on Color-Chart
-   function hoverColors() {
-       $("#color1").mouseover(function() {
-           $("#color-title1").removeClass("hidden");
-           $("#color-texture1").removeClass("hidden");
-       });
-       $("#color1").mouseout(function() {
-           $("#color-title1").addClass("hidden");
-           $("#color-texture1").addClass("hidden");
-       });
-   }
 
-hoverColors();
 
 
 function formSubmit() {
