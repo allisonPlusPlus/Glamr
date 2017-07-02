@@ -28,6 +28,7 @@ box-sizing: border-box;
 
 #color1:hover {
   background-image: url("swatches/rubywoo.jpg");
+  position: relative;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -86,6 +87,10 @@ box-sizing: border-box;
 
 
 .color-name, .color-texture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
    color: white;
    text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
 }
@@ -98,6 +103,10 @@ box-sizing: border-box;
   }
 }
 .color-name, .color-texture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
    margin-bottom: 0px;
    padding: 0px;
  }
