@@ -95,17 +95,6 @@ box-sizing: border-box;
   background-repeat: no-repeat;
 }
 
-
-.color-name, .color-texture {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-   color: white;
-   text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
-}
-
 .color-name, .color-texture:hover {
   display: block;
 }
@@ -117,11 +106,3 @@ box-sizing: border-box;
       display: block;
   }
 }
-.color-name, .color-texture {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-   margin-bottom: 0px;
-   padding: 0px;
- }
