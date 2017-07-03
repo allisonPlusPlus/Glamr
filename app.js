@@ -2,12 +2,13 @@
 
 function getFlickr(query) {
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags='+query+'&format=json';
+  var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags='+query+'&format=json&nojsoncallback=1';
     $.ajax({
         type: "GET",
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
+          console.log(response)
           var finalData = response.replace(/\\/g, '');
         console.log(finalData);
 
