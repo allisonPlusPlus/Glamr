@@ -8,7 +8,10 @@ function getFlickr(query) {
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
-        console.log(response);
+          var finalData = response.replace(/\\/g, '');
+        console.log(finalData);
+
+
 
         },
         error: function(xhr, status, e) {
