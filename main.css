@@ -1,35 +1,51 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-  font-family: 'Give You Glory', cursive;
-  font-weight: bolder;
-  font-size: 50px;
+    font-family: 'Give You Glory', cursive;
+    font-weight: bolder;
+    font-size: 50px;
 }
 
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
+.grid-item {
+    width: 200px;
+}
+
+.grid-item--width2 {
+    width: 400px;
+}
+
+.center-block {
+    display: table;
+    margin: 0 auto;
+}
+
+.searchresults {
+  margin-bottom: 20px;
+}
 .color-chart {
-box-sizing: border-box;
- margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .swatch {
-  color: white;
-  text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
-   min-height:86px !important;
+    color: white;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
+    min-height: 86px !important;
 }
 
 .swatch p, .swatch h3 {
-  display: none;
+    display: none;
 }
 
 .swatch:hover p, .swatch:hover h3 {
-  display: block;
+    display: block;
 }
 
 .swatch.rubywoo {
@@ -37,72 +53,69 @@ box-sizing: border-box;
 }
 
 .swatch.rubywoo:hover {
-  background-image: url("swatches/rubywoo.jpg");
-  position: relative;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    background-image: url("swatches/rubywoo.jpg");
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .swatch.ladydanger {
-  background-color: #cd2834;
+    background-color: #cd2834;
 }
 
 .swatch.ladydanger:hover {
-  background-image: url("swatches/ladydanger.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    background-image: url("swatches/ladydanger.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .swatch.candyyumyum {
-  background-color: #e34493;
-
+    background-color: #e34493;
 }
 
 .swatch.candyyumyum:hover {
-  background-image: url("swatches/candyyumyum.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+    background-image: url("swatches/candyyumyum.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .swatch.heroine {
-  background-color: #74427f;
+    background-color: #74427f;
 }
 
 .swatch.heroine:hover {
-  background-image: url("swatches/heroine.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    background-image: url("swatches/heroine.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .swatch.cremednude {
-  background-color: #dfb3a6;
+    background-color: #dfb3a6;
 }
 
 .swatch.cremednude:hover {
-  background-image: url("swatches/cremednude.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    background-image: url("swatches/cremednude.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .swatch.velvetteddy {
-  background-color: #b37468;
+    background-color: #b37468;
 }
 
-.swatch.velvetteddy:hover{
-  background-image: url("swatches/velvetteddy.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.swatch.velvetteddy:hover {
+    background-image: url("swatches/velvetteddy.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .color-name, .color-texture:hover {
-  display: block;
+    display: block;
 }
 
-
 @media screen and (max-device-width: 800px) {
-.mobile-block {
-      width: 100%;
-      display: block;
-  }
+    .mobile-block {
+        width: 100%;
+        display: block;
+    }
 }
