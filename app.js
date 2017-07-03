@@ -8,10 +8,7 @@ function getFlickr(query) {
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
-          console.log(response)
-          var finalData = response.replace(/\\/g, '');
-        console.log(finalData);
-
+          renderResults(response);
 
 
         },
@@ -21,7 +18,9 @@ function getFlickr(query) {
     });
 }
 
-
+function renderResults(response) {
+ $("#result1").find("img").attr('src', response.items[0].media.m );
+}
 
 
 function formSubmit() {
