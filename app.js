@@ -20,9 +20,10 @@ function renderResults(response) {
   'use strict';
   //Hide lipstick smudges image
   $(".smudges").addClass("hidden");
-  //Render thumbnail results
   for (var i = 0; i <= 6; i++) {
+    //Render thumbnail results
     $(`#result${i+1}`).find("img").attr('src', response.items[i].media.m);
+    $(`#result${i+1}`).find("a").attr('href', response.items[i].link);
   }
 }
 
