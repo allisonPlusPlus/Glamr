@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 h1 {
     font-family: 'Give You Glory', cursive;
     font-weight: bolder;
@@ -11,6 +12,10 @@ h1 {
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.result {
+  width: 100%;
 }
 
 .grid-item {
