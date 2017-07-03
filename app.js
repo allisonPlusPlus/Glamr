@@ -17,8 +17,13 @@ function getFlickr(query) {
 
 
 function renderResults(response) {
+  'use strict';
+  //Hide lipstick smudges image
   $(".smudges").addClass("hidden");
-    $("#result1").find("img").attr('src', response.items[0].media.m);
+  //Render thumbnail results
+  for (var i = 0; i <= 6; i++) {
+    $(`#result${i+1}`).find("img").attr('src', response.items[i].media.m);
+  }
 }
 
 
