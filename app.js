@@ -20,6 +20,8 @@ function renderResults(response) {
     'use strict';
     //Hide lipstick smudges image
     $(".smudges").addClass("hidden");
+    // Unhide Results
+    $(".js-search-results").removeClass("hidden");
     for (var i = 0; i <= 6; i++) {
         //Render thumbnail images
         $(`#result${i+1}`).find("img").attr('src', response.items[i].media.m);
