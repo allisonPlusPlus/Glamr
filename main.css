@@ -129,4 +129,12 @@ h1 {
         width: 100%;
         display: block;
     }
+
+    .swatch p, .swatch h3 {
+        display: block;
+    }
+
+    .swatch:hover p, .swatch:hover h3 {
+        display: block;
+    }
 }
