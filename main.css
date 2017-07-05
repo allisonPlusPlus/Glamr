@@ -132,9 +132,14 @@ h1 {
 
     .swatch p, .swatch h3 {
         display: block;
+        margin: 0px;
     }
 
-    .swatch:hover p, .swatch:hover h3 {
-        display: block;
+    .swatch h3 {
+      padding-top: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
     }
+
 }
