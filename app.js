@@ -15,7 +15,7 @@ function getFlickr(query) {
 }
 
 
-
+function pickColor() {
 $(".rubywoo").on("click", function() {
   getFlickr("rubywoo");
 });
@@ -39,7 +39,9 @@ $(".cremednude").on("click", function() {
 $(".velvetteddy").on("click", function() {
   getFlickr("velvet teddy");
 });
+};
 
+pickColor();
 
 
 
