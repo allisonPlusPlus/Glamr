@@ -20,6 +20,26 @@ $(".rubywoo").on("click", function() {
   getFlickr("rubywoo");
 });
 
+$(".ladydanger").on("click", function() {
+  getFlickr("ladydanger");
+});
+
+$(".candyyumyum").on("click", function() {
+  getFlickr("candy yumyum");
+});
+
+$(".heroine").on("click", function() {
+  getFlickr("mac heroine");
+});
+
+$(".cremednude").on("click", function() {
+  getFlickr("creme d' nude");
+});
+
+$(".velvetteddy").on("click", function() {
+  getFlickr("velvet teddy");
+});
+
 
 
 
