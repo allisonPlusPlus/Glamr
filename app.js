@@ -16,6 +16,15 @@ function getFlickr(query) {
 
 
 
+$(".rubywoo").on("click", function() {
+  getFlickr("rubywoo");
+});
+
+
+
+
+
+
 function renderResults(response) {
     'use strict';
     //Hide lipstick smudges image
