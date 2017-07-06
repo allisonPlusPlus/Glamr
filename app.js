@@ -22,6 +22,9 @@ function renderResults(response) {
     $(".smudges").addClass("hidden");
     // Unhide Results
     $(".js-search-results").removeClass("hidden");
+    // fadeIn Results
+    $(".js-search-results").hide().fadeIn("slow");
+     
     for (var i = 0; i <= 6; i++) {
         //Render thumbnail images
         $(`#result${i+1}`).find("img").attr('src', response.items[i].media.m);
