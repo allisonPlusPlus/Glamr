@@ -18,8 +18,9 @@ function getFlickr(query) {
 
 function renderResults(response) {
     'use strict';
-    //Hide lipstick smudges image
+    //Hide lipstick smudges image and headline
     $(".smudges").addClass("hidden");
+    $(".headline").addClass("hidden");
     // Unhide Results
     $(".js-search-results").removeClass("hidden");
     // fadeIn Results

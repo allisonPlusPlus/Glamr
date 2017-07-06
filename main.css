@@ -9,6 +9,11 @@ h1 {
     font-size: 80px;
 }
 
+.headline {
+  font-family: 'Give You Glory', cursive;
+  font-weight: bolder;
+}
+
 .thumbnail {
   padding: 0 !important;
   margin: 0 !important;
