@@ -9,6 +9,10 @@ h1 {
     font-size: 80px;
 }
 
+.thumbnail {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 .nopadding {
     padding: 0 !important;
