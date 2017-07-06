@@ -15,7 +15,7 @@ h1 {
     margin: 0 !important;
 }
 
-.title p {
+.title {
     position: absolute;
     top: 50px;
     left: 0px;

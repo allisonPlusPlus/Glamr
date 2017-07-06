@@ -38,7 +38,7 @@ function renderResults(response) {
        $(`.title${i+1}`).html(response.items[i].title);
     });
     $(`#result${i+1}`).mouseout(function() {
-       $("p").empty();
+       $(".title").empty();
     });
     }
 }
