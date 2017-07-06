@@ -24,14 +24,25 @@ function renderResults(response) {
     $(".js-search-results").removeClass("hidden");
     // fadeIn Results
     $(".js-search-results").hide().fadeIn("slow");
-     
+
     for (var i = 0; i <= 6; i++) {
         //Render thumbnail images
         $(`#result${i+1}`).find("img").attr('src', response.items[i].media.m);
         //Render thumbnail links
         $(`#result${i+1}`).find("a").attr('href', response.items[i].link);
+        hoverTitles(i)
+    }
+    function hoverTitles(i) {
+      'use strict'
+    $(`#result${i+1}`).mouseover(function() {
+       $(`.title${i+1}`).html(response.items[i].title);
+    });
+    $(`#result${i+1}`).mouseout(function() {
+       $("p").empty();
+    });
     }
 }
+
 
 function pickColor() {
     $(".rubywoo").on("click", function() {
