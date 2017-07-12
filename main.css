@@ -24,11 +24,6 @@ a:active {
   text-decoration: none;
 }
 
-a:hover {
-  border: 0px;
-  text-decoration: 0px;
-}
-
 
 .nopadding {
     padding: 0 !important;
