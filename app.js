@@ -25,7 +25,9 @@ function renderResults(response) {
     $(".js-search-results").removeClass("hidden");
     // fadeIn Results
     $(".js-search-results").hide().fadeIn("slow");
+    // Hide divs that are not being used to render images
     $(".output").addClass('hidden');
+    // Change instructions to user for results
     $(".instructions").html("Click thumbnail to view image on Flickr")
 
     for (var i = 0; i < response.items.length; i++) {
@@ -36,14 +38,15 @@ function renderResults(response) {
         $(`#result${i+1}`).removeClass("hidden");
         hoverTitles(i);
     }
+
     function hoverTitles(i) {
-      'use strict'
-    $(`#result${i+1}`).mouseover(function() {
-       $(`.title${i+1}`).html(response.items[i].title);
-    });
-    $(`#result${i+1}`).mouseout(function() {
-       $(".title").empty();
-    });
+        'use strict'
+        $(`#result${i+1}`).mouseover(function() {
+            $(`.title${i+1}`).html(response.items[i].title);
+        });
+        $(`#result${i+1}`).mouseout(function() {
+            $(".title").empty();
+        });
     }
 }
 
