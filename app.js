@@ -25,7 +25,8 @@ function renderResults(response) {
     $(".js-search-results").removeClass("hidden");
     // fadeIn Results
     $(".js-search-results").hide().fadeIn("slow");
-    $('.output').addClass('hidden');
+    $(".output").addClass('hidden');
+    $(".instructions").html("Click thumbnail to view image on Flickr")
 
     for (var i = 0; i < response.items.length; i++) {
         //Render thumbnail images
