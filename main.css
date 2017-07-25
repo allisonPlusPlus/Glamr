@@ -22,6 +22,8 @@ h1 {
 a:active {
   border: 0px;
   text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
 }
 
 
@@ -97,6 +99,8 @@ a:active {
     position: relative;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .swatch.ladydanger {
@@ -107,6 +111,8 @@ a:active {
     background-image: url("swatches/ladydanger.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .swatch.candyyumyum {
@@ -117,6 +123,8 @@ a:active {
     background-image: url("swatches/candyyumyum.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .swatch.heroine {
@@ -127,6 +135,8 @@ a:active {
     background-image: url("swatches/heroine.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .swatch.cremednude {
@@ -137,6 +147,8 @@ a:active {
     background-image: url("swatches/cremednude.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .swatch.velvetteddy {
@@ -147,6 +159,8 @@ a:active {
     background-image: url("swatches/velvetteddy.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .color-name, .color-texture:hover {
