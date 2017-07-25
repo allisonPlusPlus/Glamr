@@ -49,6 +49,8 @@ a:hover {
     width: 100%;
     color: white;
     text-shadow: 4px 4px 9px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    cursor: hand;
 }
 
 
