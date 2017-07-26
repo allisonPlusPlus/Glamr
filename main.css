@@ -31,6 +31,7 @@ a:hover .logo {
 }
 
 a:active {
+    color: black;
     border: 0px;
     text-decoration: none;
     cursor: pointer;
