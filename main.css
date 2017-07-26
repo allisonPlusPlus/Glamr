@@ -2,7 +2,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .logo {
     font-family: 'Give You Glory', cursive;
     font-weight: bolder;
@@ -10,27 +9,32 @@
 }
 
 a .logo {
-  font-family: 'Give You Glory', cursive;
-  font-weight: bolder;
-  color: black;
-  text-decoration: none;
+    font-family: 'Give You Glory', cursive;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover .logo {
+    color: #4d4d4d;
+    text-decoration: none;
 }
 
 .headline {
-  font-family: 'Give You Glory', cursive;
-  font-weight: bolder;
+    font-family: 'Give You Glory', cursive;
+    font-weight: bolder;
 }
 
 .thumbnail {
-  padding: 0 !important;
-  margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 a:active {
-  border: 0px;
-  text-decoration: none;
-  cursor: pointer;
-  cursor: hand;
+    border: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
 }
 
 a:hover {
@@ -53,14 +57,12 @@ a:hover {
     cursor: hand;
 }
 
-
 .result {
     transition: all .5s ease;
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 
 .result:hover {
     opacity: 0.5;
@@ -81,8 +83,9 @@ a:hover {
 }
 
 .searchresults {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .color-chart {
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -184,17 +187,14 @@ a:hover {
         width: 100%;
         display: block;
     }
-
     .swatch p, .swatch h3 {
         display: block;
         margin: 0px;
     }
-
     .swatch h3 {
-      padding-top: 20px;
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-bottom: 0px;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
     }
-
 }
