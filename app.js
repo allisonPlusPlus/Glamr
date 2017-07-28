@@ -14,17 +14,38 @@ function getFlickr(query) {
     });
 }
 
-function chooseVideo() {
+
+function getYoutube(query) {
+  var youTubeURL = "https://www.googleapis.com/youtube/v3/search";
+  var data = {
+        maxResults: '6',
+        part: 'snippet',
+        key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
+        q: query,
+    };
+    $.getJSON(youTubeURL, data, displayYoutubeResults);
+}
+
+
+function displayYoutubeResults() {
+  console.log("success")
+}
+
+
+
+function chooseVideo(query) {
 
   $(".videos").on("click", function() {
      $(".js-search-results").empty();
+     getYoutube(query)
   });
-
-  
 
 }
 
 chooseVideo();
+
+
+
 
 function renderResults(response) {
     'use strict';
