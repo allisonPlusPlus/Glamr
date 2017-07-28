@@ -28,7 +28,7 @@ function getYoutube(query) {
 
 
 function displayYoutubeResults(response) {
-  function appendResults(item, i) {
+  function appendYoutubeResults(item, i) {
     var watchUrl = "https://www.youtube.com/watch?v=";
 
           //Display thumbnail
@@ -39,7 +39,7 @@ function displayYoutubeResults(response) {
       }
 
       // Mouse Hover Effect
-    function hoverTitle(item, i) {
+    function hoverYoutubeTitle(item, i) {
         $(`#result${i+1}`).mouseover(function() {
             $(`.title${i+1}`).html(response.items[i].snippet.title);
         });
@@ -48,8 +48,8 @@ function displayYoutubeResults(response) {
         });
     }
 
-response.items.forEach(appendResults);
-response.items.forEach(hoverTitle);
+response.items.forEach(appendYoutubeResults);
+response.items.forEach(hoverYoutubeTitle);
 
 }
 
