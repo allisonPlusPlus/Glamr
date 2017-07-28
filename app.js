@@ -31,10 +31,18 @@ function getYoutube(query) {
 
 
 function displayYoutubeResults(response) {
-  console.log(response);
-  for (var i = 0; i < response.items.length; i++) {
-    console.log(response.items[i])
-  }
+  function appendResults(item, i) {
+    var watchUrl = "https://www.youtube.com/watch?v=";
+
+          //Display thumbnail
+          $(`result${i+1}`).find("img").attr('src', item.snippet.thumbnails.medium.url);
+
+          // //Make thumbnail link to video
+          $(`#result${i+1}`).find('a').attr('href', watchUrl + item.id.videoId);
+      }
+
+response.items.forEach(appendResults);
+
 }
 
 
