@@ -138,6 +138,13 @@ a:hover {
 
 .swatch:hover p, .swatch:hover h3 {
     display: block;
+    margin: 0px;
+
+}
+
+.swatch:hover h3 {
+    padding-top: 20px;
+
 }
 
 .swatch.rubywoo {
