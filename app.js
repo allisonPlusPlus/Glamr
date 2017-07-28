@@ -1,5 +1,4 @@
 function getFlickr(query) {
-    console.log("GetFlickr", query)
     var proxy = 'https://cors-anywhere.herokuapp.com/';
     var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=' + query + '&format=json&nojsoncallback=1';
     $.ajax({
@@ -7,7 +6,6 @@ function getFlickr(query) {
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
-          console.log("ajax", query)
             renderResults(response, query);
         },
         error: function(xhr, status, e) {
@@ -18,7 +16,6 @@ function getFlickr(query) {
 
 
 function getYoutube(query) {
-  console.log("getYoutube", query)
   var youTubeURL = "https://www.googleapis.com/youtube/v3/search";
   var data = {
         maxResults: '6',
@@ -69,7 +66,6 @@ function clearImages(query) {
 
 
 function chooseVideo(query) {
-console.log("chooseVideo", query)
   $(".videos").on("click", function() {
      clearImages(query);
   });
@@ -81,7 +77,6 @@ console.log("chooseVideo", query)
 
 
 function renderResults(response, query) {
-  console.log("renderresults", query)
     'use strict';
     //Hide lipstick smudges image and headline
     $(".smudges").addClass("hidden");
@@ -105,7 +100,6 @@ function renderResults(response, query) {
     }
 
     function hoverTitles(i, query) {
-      console.log("hoverTitles", query)
         'use strict'
         $(`#result${i+1}`).mouseover(function() {
             $(`.title${i+1}`).html(response.items[i].title);
