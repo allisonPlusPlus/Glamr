@@ -26,11 +26,11 @@ function getYoutube(query) {
         key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
         q: query,
     };
-    $.getJSON(youTubeURL, data, displayYoutubeResults(query));
+    $.getJSON(youTubeURL, data, displayYoutubeResults(query, data));
 }
 
 
-function displayYoutubeResults(query) {
+function displayYoutubeResults(query, data) {
   console.log("displayYoutubeResults", query)
 }
 
@@ -45,7 +45,6 @@ console.log("chooseVideo", query)
 
 }
 
-chooseVideo();
 
 
 
@@ -90,7 +89,6 @@ function renderResults(response, query) {
 
 function pickColor() {
     $(".rubywoo").on("click", function() {
-        query = "rubywoo"
         getFlickr("rubywoo");
     });
 
