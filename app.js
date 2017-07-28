@@ -26,12 +26,15 @@ function getYoutube(query) {
         key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
         q: query,
     };
-    $.getJSON(youTubeURL, data, displayYoutubeResults(query, data));
+    $.getJSON(youTubeURL, data, displayYoutubeResults);
 }
 
 
-function displayYoutubeResults(query, data) {
-  console.log("displayYoutubeResults", query)
+function displayYoutubeResults(response) {
+  console.log(response);
+  for (var i = 0; i < response.items.length; i++) {
+    console.log(response.items[i])
+  }
 }
 
 
