@@ -251,10 +251,6 @@ a:hover {
 
 
 
-.color-name, .color-texture:hover {
-    display: block;
-}
-
 @media screen and (max-device-width: 800px) {
     .mobile-block {
         width: 100%;
