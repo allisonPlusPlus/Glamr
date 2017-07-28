@@ -133,6 +133,19 @@ function pickColor() {
     $(".velvetteddy").on("click", function() {
         getFlickr("velvet teddy");
     });
+
+    $(".morange").on("click", function() {
+        getFlickr("mac morange");
+    });
+
+    $(".chatterbox").on("click", function() {
+        getFlickr("mac chatterbox");
+    });
+
+    $(".vegasvolt").on("click", function() {
+        getFlickr("mac vegas volt");
+    });
+
 };
 
 
