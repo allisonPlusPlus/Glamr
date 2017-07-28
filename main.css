@@ -213,6 +213,44 @@ a:hover {
     cursor: hand;
 }
 
+.swatch.morange {
+    background-color: #ec735e;
+}
+
+.swatch.morange:hover {
+    background-image: url("swatches/morange.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.swatch.chatterbox {
+    background-color: #d87a92;
+}
+
+.swatch.chatterbox:hover {
+    background-image: url("swatches/chatterbox.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.swatch.vegasvolt {
+    background-color: #d78080;
+}
+
+.swatch.vegasvolt:hover {
+    background-image: url("swatches/vegasvolt.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
 .color-name, .color-texture:hover {
     display: block;
 }
