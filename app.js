@@ -14,7 +14,17 @@ function getFlickr(query) {
     });
 }
 
+function chooseVideo() {
 
+  $(".videos").on("click", function() {
+     $(".js-search-results").empty();
+  });
+
+  
+
+}
+
+chooseVideo();
 
 function renderResults(response) {
     'use strict';
