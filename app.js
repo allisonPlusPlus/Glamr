@@ -6,7 +6,7 @@ function getFlickr(query) {
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
-            renderResults(response, query);
+            renderFlickrResults(response, query);
         },
         error: function(xhr, status, e) {
             console.log(status, e);
@@ -73,7 +73,7 @@ function chooseVideo(query) {
 }
 
 
-function renderResults(response, query) {
+function renderFlickrResults(response, query) {
     'use strict';
     //Hide lipstick smudges image and headline
     $(".smudges").addClass("hidden");
@@ -93,10 +93,10 @@ function renderResults(response, query) {
         //Render thumbnail links
         $(`#result${i+1}`).find("a").attr('href', response.items[i].link);
         $(`#result${i+1}`).removeClass("hidden");
-        hoverTitles(i, query);
+        hoverFlickrTitles(i, query);
     }
 
-    function hoverTitles(i, query) {
+    function hoverFlickrTitles(i, query) {
         'use strict'
         $(`#result${i+1}`).mouseover(function() {
             $(`.title${i+1}`).html(response.items[i].title);
