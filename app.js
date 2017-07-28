@@ -1,4 +1,5 @@
 function getFlickr(query) {
+    console.log("GetFlickr", query)
     var proxy = 'https://cors-anywhere.herokuapp.com/';
     var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=' + query + '&format=json&nojsoncallback=1';
     $.ajax({
@@ -6,7 +7,8 @@ function getFlickr(query) {
         url: proxy + url,
         // dataType: "json",
         success: function(response) {
-            renderResults(response);
+          console.log("ajax", query)
+            renderResults(response, query);
         },
         error: function(xhr, status, e) {
             console.log(status, e);
@@ -16,6 +18,7 @@ function getFlickr(query) {
 
 
 function getYoutube(query) {
+  console.log("getYoutube", query)
   var youTubeURL = "https://www.googleapis.com/youtube/v3/search";
   var data = {
         maxResults: '6',
@@ -23,18 +26,18 @@ function getYoutube(query) {
         key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
         q: query,
     };
-    $.getJSON(youTubeURL, data, displayYoutubeResults);
+    $.getJSON(youTubeURL, data, displayYoutubeResults(query));
 }
 
 
-function displayYoutubeResults() {
-  console.log("success")
+function displayYoutubeResults(query) {
+  console.log("displayYoutubeResults", query)
 }
 
 
 
 function chooseVideo(query) {
-
+console.log("chooseVideo", query)
   $(".videos").on("click", function() {
      $(".js-search-results").empty();
      getYoutube(query)
@@ -47,7 +50,8 @@ chooseVideo();
 
 
 
-function renderResults(response) {
+function renderResults(response, query) {
+  console.log("renderresults", query)
     'use strict';
     //Hide lipstick smudges image and headline
     $(".smudges").addClass("hidden");
@@ -67,10 +71,11 @@ function renderResults(response) {
         //Render thumbnail links
         $(`#result${i+1}`).find("a").attr('href', response.items[i].link);
         $(`#result${i+1}`).removeClass("hidden");
-        hoverTitles(i);
+        hoverTitles(i, query);
     }
 
-    function hoverTitles(i) {
+    function hoverTitles(i, query) {
+      console.log("hoverTitles", query)
         'use strict'
         $(`#result${i+1}`).mouseover(function() {
             $(`.title${i+1}`).html(response.items[i].title);
@@ -78,12 +83,14 @@ function renderResults(response) {
         $(`#result${i+1}`).mouseout(function() {
             $(".title").empty();
         });
+        chooseVideo(query)
     }
 }
 
 
 function pickColor() {
     $(".rubywoo").on("click", function() {
+        query = "rubywoo"
         getFlickr("rubywoo");
     });
 
