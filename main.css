@@ -259,10 +259,6 @@ a:hover {
 
 
 @media screen and (max-device-width: 800px) {
-    .mobile-block {
-        width: 100%;
-        display: block;
-    }
     .swatch p, .swatch h3 {
         display: block;
         margin: 0px;
