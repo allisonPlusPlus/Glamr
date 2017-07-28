@@ -41,7 +41,18 @@ function displayYoutubeResults(response) {
           $(`#result${i+1}`).find('a').attr('href', watchUrl + item.id.videoId);
       }
 
+      // Mouse Hover Effect
+    function hoverTitle(item, i) {
+        $(`#result${i+1}`).mouseover(function() {
+            $(`.title${i+1}`).html(response.items[i].snippet.title);
+        });
+        $(`#result${i+1}`).mouseout(function() {
+            $("h2").empty();
+        });
+    }
+
 response.items.forEach(appendResults);
+response.items.forEach(hoverTitle);
 
 }
 
