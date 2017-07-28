@@ -25,9 +25,32 @@ a:hover .logo {
     font-weight: bolder;
 }
 
+.media-choice {
+  font-family: 'Give You Glory', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.media-choice .images, .videos {
+  font-family: 'Give You Glory', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
 .images, .videos {
   cursor: pointer;
   cursor: hand;
+}
+
+.images:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.videos:hover {
+  color: #4d4d4d;
+  text-decoration: none;
 }
 
 .thumbnail {
