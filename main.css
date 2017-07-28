@@ -16,7 +16,7 @@ a .logo {
 }
 
 a:hover .logo {
-    color: #4d4d4d;
+    color: #686868;
     text-decoration: none;
 }
 
@@ -44,12 +44,12 @@ a:hover .logo {
 }
 
 .images:hover {
-  color: #4d4d4d;
+  color: #686868;
   text-decoration: none;
 }
 
 .videos:hover {
-  color: #4d4d4d;
+  color: #686868;
   text-decoration: none;
 }
 
