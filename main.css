@@ -25,6 +25,11 @@ a:hover .logo {
     font-weight: bolder;
 }
 
+.images, .videos {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .thumbnail {
     padding: 0 !important;
     margin: 0 !important;
