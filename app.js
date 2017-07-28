@@ -73,9 +73,6 @@ function chooseVideo(query) {
 }
 
 
-
-
-
 function renderResults(response, query) {
     'use strict';
     //Hide lipstick smudges image and headline
@@ -88,7 +85,7 @@ function renderResults(response, query) {
     // Hide divs that are not being used to render images
     $(".output").addClass('hidden');
     // Change instructions to user for results
-    $(".instructions").html("Click thumbnail to view image on Flickr")
+    $(".instructions").html("Click thumbnail to view image on Flickr or click to view video results")
 
     for (var i = 0; i < response.items.length; i++) {
         //Render thumbnail images
