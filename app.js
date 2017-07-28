@@ -32,7 +32,7 @@ function displayYoutubeResults(response) {
     var watchUrl = "https://www.youtube.com/watch?v=";
 
           //Display thumbnail
-          $(`#result${i+1}`).find("img").attr('src', item.snippet.thumbnails.medium.url);
+          $(`#result${i+1}`).find("img").attr('src', item.snippet.thumbnails.high.url);
 
           // //Make thumbnail link to video
           $(`#result${i+1}`).find('a').attr('href', watchUrl + item.id.videoId);
