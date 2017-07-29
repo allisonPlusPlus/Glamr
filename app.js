@@ -59,9 +59,8 @@ response.items.forEach(hoverYoutubeTitle);
 
 function clearImages(query) {
   for (var i = 0; i < 6; i++) {
-      //Render thumbnail images
+     // Clear results by setting to an empty string
       $(`#result${i+1}`).find("img").attr('src', "");
-      //Render thumbnail links
       $(`#result${i+1}`).find("a").attr('href', "");
     }
  getYoutube(query)
@@ -75,6 +74,8 @@ function chooseVideo(query) {
   });
 
 }
+
+
 
 
 function renderFlickrResults(response, query) {
