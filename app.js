@@ -1,3 +1,8 @@
+var state = {
+    query: ""
+}
+
+
 function getFlickr(query) {
     var proxy = 'https://cors-anywhere.herokuapp.com/';
     var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=' + query + '&format=json&nojsoncallback=1';
@@ -111,39 +116,48 @@ function renderFlickrResults(response, query) {
 
 function pickColor() {
     $(".rubywoo").on("click", function() {
+        var state.query = "rubywoo";
         getFlickr("rubywoo");
     });
 
     $(".ladydanger").on("click", function() {
+         var state.query = "ladydanger";
         getFlickr("ladydanger");
     });
 
     $(".candyyumyum").on("click", function() {
+        var state.query = "candy yumyum";
         getFlickr("candy yumyum");
     });
 
     $(".heroine").on("click", function() {
+         var state.query = "mac heroine"
         getFlickr("mac heroine");
     });
 
     $(".cremednude").on("click", function() {
+          var state.query = "creme d' nude";
         getFlickr("creme d' nude");
     });
 
     $(".velvetteddy").on("click", function() {
+         var state.query = "velvet teddy";
         getFlickr("velvet teddy");
     });
 
     $(".morange").on("click", function() {
+        var state.query = "mac morange";
         getFlickr("mac morange");
     });
 
     $(".chatterbox").on("click", function() {
         getFlickr("mac chatterbox");
+        var state.query = "mac chatterbox";
     });
 
     $(".vegasvolt").on("click", function() {
         getFlickr("mac vegas volt");
+        var state.query = "mac vegas volt";
     });
 
 };
