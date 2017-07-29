@@ -55,6 +55,7 @@ function displayYoutubeResults(response) {
 response.items.forEach(appendYoutubeResults);
 response.items.forEach(hoverYoutubeTitle);
 
+chooseImages();
 }
 
 function clearImages(query) {
@@ -72,8 +73,22 @@ function chooseVideo(query) {
   $(".videos").on("click", function() {
      clearImages(query);
   });
-
 }
+
+function chooseImages() {
+  $(".images").on("click", function() {
+    clearVideos();
+  });
+}
+
+function clearVideos() {
+  for (var i = 0; i < 6; i++) {
+     // Clear results by setting to an empty string
+      $(`#result${i+1}`).find("img").attr('src', "");
+      $(`#result${i+1}`).find("a").attr('href', "");
+    }
+}
+
 
 
 
