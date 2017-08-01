@@ -32,6 +32,7 @@ function getYoutube(query) {
 
 
 function displayYoutubeResults(response) {
+  console.log("displayYoutubeResults");
   function appendYoutubeResults(item, i) {
     var watchUrl = "https://www.youtube.com/watch?v=";
 
@@ -55,7 +56,7 @@ function displayYoutubeResults(response) {
 response.items.forEach(appendYoutubeResults);
 response.items.forEach(hoverYoutubeTitle);
 
-chooseImages();
+
 }
 
 function clearImages(query) {
@@ -76,17 +77,22 @@ function chooseVideo(query) {
 }
 
 function chooseImages() {
+  console.log("chooseImages")
   $(".images").on("click", function() {
     clearVideos();
+    getFlickr(state.query);
+    console.log("chooseImages on click")
   });
 }
 
 function clearVideos() {
+  console.log("clearVideos")
   for (var i = 0; i < 6; i++) {
      // Clear results by setting to an empty string
       $(`#result${i+1}`).find("img").attr('src', "");
       $(`#result${i+1}`).find("a").attr('href', "");
     }
+
 }
 
 
@@ -174,7 +180,7 @@ function pickColor() {
       state.query = "mac vegas volt"
         getFlickr("mac vegas volt");
     });
-
+    chooseImages();
 };
 
 
