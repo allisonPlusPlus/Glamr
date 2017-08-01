@@ -77,7 +77,6 @@ function chooseVideo(query) {
 }
 
 function chooseImages() {
-  console.log("chooseImages")
   $(".images").on("click", function() {
     clearVideos();
     getFlickr(state.query);
