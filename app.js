@@ -35,6 +35,8 @@ function displayYoutubeResults(response) {
   console.log("displayYoutubeResults");
   function appendYoutubeResults(item, i) {
     var watchUrl = "https://www.youtube.com/watch?v=";
+      //Acess all output divs for youtube results
+       $(".output").removeClass('hidden');
 
           //Display thumbnail
           $(`#result${i+1}`).find("img").attr('src', item.snippet.thumbnails.high.url);
