@@ -132,6 +132,11 @@ function changeTitle() {
   $(".current-color").html(state.query);
 }
 
+function scrollToTop() {
+  $(".color-chart").on("click", function() {
+    $("body").scrollTop(0);
+});
+}
 
 
 function pickColor() {
@@ -180,6 +185,7 @@ function pickColor() {
     getFlickr("mac vegas volt");
   });
   chooseImages();
+  scrollToTop();
 };
 
 $(function() {
