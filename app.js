@@ -93,6 +93,8 @@ function clearVideos() {
 
 function renderFlickrResults(response, query) {
   'use strict';
+  //Scroll user to top of Page
+    scrollToTop();
   //Hide lipstick smudges image and headline
   $(".smudges").addClass("hidden");
   $(".headline").addClass("hidden");
@@ -185,7 +187,6 @@ function pickColor() {
     getFlickr("mac vegas volt");
   });
   chooseImages();
-  scrollToTop();
 };
 
 $(function() {
