@@ -1,12 +1,12 @@
 # Glamr
 
-## A lipstick color viewer powered by the Flickr and YouTube APIS.
+## A lipstick color viewer powered by the Flickr and YouTube APIs.
 
 This passion project was inspired by my love of lipstick and wanting a way to quickly and beautifully preview colors I am interested in adding to my collection.
 
 ![Homepage Screenshot](screenshots/homepage2.png "Homepage ")
 
-Glamr was built using HTML, CSS, Bootstrap, jQuery, Ajax, and the Flickr and YouTube APIS. The resulting photo collage was built with Masonry and is fully mobile-responsive.
+Glamr was built using HTML, CSS, Bootstrap, jQuery, Ajax, and the Flickr and YouTube APIs. The resulting photo collage was built with Masonry and is fully mobile-responsive.
 
 ![Mobile Homepage Screenshot](screenshots/mobilehome2.jpg "Mobile Home Page ")
 
