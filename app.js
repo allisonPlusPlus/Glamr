@@ -1,5 +1,5 @@
 var state = {
-  query: ""
+  query: "",
 };
 
 function getFlickr(query) {
@@ -96,6 +96,9 @@ function renderFlickrResults(response, query) {
   //Hide lipstick smudges image and headline
   $(".smudges").addClass("hidden");
   $(".headline").addClass("hidden");
+ //Add Title of Current Color
+   changeTitle();
+
   // Unhide Results
   $(".js-search-results").removeClass("hidden");
   // fadeIn Results
@@ -126,49 +129,55 @@ function renderFlickrResults(response, query) {
   }
 }
 
+function changeTitle() {
+  $(".current-color").html(`- ${state.query} -` );
+}
+
+
+
 function pickColor() {
   $(".rubywoo").on("click", function() {
-    state.query = "rubywoo"
+    state.query = "MAC Rubywoo"
     getFlickr("rubywoo");
   });
 
   $(".ladydanger").on("click", function() {
-    state.query = "ladydanger"
+    state.query = "MAC Ladydanger"
     getFlickr("ladydanger");
   });
 
   $(".candyyumyum").on("click", function() {
-    state.query = "candy yumyum"
+    state.query = "MAC Candy YumYum"
     getFlickr("candy yumyum");
   });
 
   $(".heroine").on("click", function() {
-    state.query = "mac heroine"
+    state.query = "MAC Heroine"
     getFlickr("mac heroine");
   });
 
   $(".cremednude").on("click", function() {
-    state.query = "creme d' nude"
+    state.query = "MAC Creme d' Nude"
     getFlickr("creme d' nude");
   });
 
   $(".velvetteddy").on("click", function() {
-    state.query = "velvet teddy"
+    state.query = "MAC Velvet Teddy"
     getFlickr("velvet teddy");
   });
 
   $(".morange").on("click", function() {
-    state.query = "mac morange"
+    state.query = "MAC Morange"
     getFlickr("mac morange");
   });
 
   $(".chatterbox").on("click", function() {
-    state.query = "mac chatterbox"
+    state.query = "MAC Chatterbox"
     getFlickr("mac chatterbox");
   });
 
   $(".vegasvolt").on("click", function() {
-    state.query = "mac vegas volt"
+    state.query = "Mac Vegas Volt"
     getFlickr("mac vegas volt");
   });
   chooseImages();

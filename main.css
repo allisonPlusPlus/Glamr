@@ -37,6 +37,14 @@ a:hover .logo {
   margin-bottom: 10px;
 }
 
+.current-color {
+  font-family: 'Give You Glory', cursive;
+  font-weight: bolder;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+
 .media-choice .images, .videos {
   font-family: 'Give You Glory', cursive;
   font-weight: bolder;
