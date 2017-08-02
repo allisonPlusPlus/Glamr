@@ -8,7 +8,7 @@ This passion project was inspired by my love of lipstick and wanting a way to qu
 
 Glamr was built using HTML, CSS, Bootstrap, jQuery, Ajax, and the Flickr and YouTube APIS. The resulting photo collage was built with Masonry and is fully mobile-responsive.
 
-![Mobile Homepage Screenshot](screenshots/mobilehome.jpg "Mobile Home Page ")
+![Mobile Homepage Screenshot](screenshots/mobilehome2.jpg "Mobile Home Page ")
 
 The user is prompted to choose from an interactive grid of popular MAC lipstick shades to view on their desktop or mobile device.
 
