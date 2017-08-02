@@ -98,7 +98,6 @@ function renderFlickrResults(response, query) {
   $(".headline").addClass("hidden");
  //Add Title of Current Color
    changeTitle();
-
   // Unhide Results
   $(".js-search-results").removeClass("hidden");
   // fadeIn Results
@@ -130,7 +129,7 @@ function renderFlickrResults(response, query) {
 }
 
 function changeTitle() {
-  $(".current-color").html(`- ${state.query} -` );
+  $(".current-color").html(state.query);
 }
 
 
