@@ -20,4 +20,4 @@ The most recent photos tagged with that lipstick on Flickr are then displayed in
 
 ![Result Image](screenshots/results2.png)
 
-[Click here](http://wwww.glamr.io) to view the live version of this project at glamr.io
+[Click here](https://allisonplusplus.github.io/Glamr/) to view the live version of this project.
